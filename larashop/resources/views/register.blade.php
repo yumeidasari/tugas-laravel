@@ -8,7 +8,8 @@
             <h2> Sign Up Form</h2>
         </div>
 
-        <form action="{{url('/welcome')}}" method="GET">
+        <form action="{{url('/welcome')}}" method="POST" enctype="multipart/form-data">
+        {{ csrf_field() }}
         
             <label for="first_name"> First name:</label>
             <br><br>
