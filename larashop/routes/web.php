@@ -22,3 +22,4 @@ Route::get('/register', function(){
 Route::get('/welcome', function() {
     return view('welcome');
 });
+Route::post('/welcome', 'AuthController@halo_post');
