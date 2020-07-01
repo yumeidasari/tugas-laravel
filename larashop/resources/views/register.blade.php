@@ -10,14 +10,13 @@
 
         <form action="{{url('/welcome')}}" method="POST" enctype="multipart/form-data">
         {{ csrf_field() }}
-        
             <label for="first_name"> First name:</label>
             <br><br>
-            <input type="text" placeholder="" value="" id="first_name">
+            <input type="text" placeholder="" value="" name="first_name">
             <br><br>
             <label for="last_name"> Last Name:</label>
             <br><br>
-            <input type="text" placeholder="" value="" id="last_name">
+            <input type="text" placeholder="" value="" name="last_name">
         
             <br><br>
             <label> Gender:</label>
